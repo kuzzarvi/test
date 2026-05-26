@@ -1,8 +1,10 @@
+import {Loader} from "./shared/Components";
+
 function App() {
 
   return (
     <>
-      App
+      <Loader size={'sm'} />
     </>
   )
 }

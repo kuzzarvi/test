@@ -1,0 +1,1 @@
+export const SIZE_MAP = ['sm', 'lg', 'md'] as const;
