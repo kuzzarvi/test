@@ -1,11 +1,9 @@
-import {Loader} from "./shared/Components";
+import {Layout, Loader} from "./shared/Components";
 
 function App() {
 
   return (
-    <>
-      <Loader size={'sm'} />
-    </>
+      <Layout headerContent={<div>Header</div>} mainContent={<Loader />} footerContent={<div>footer</div>}/>
   )
 }
 

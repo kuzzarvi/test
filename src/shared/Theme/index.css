@@ -13,6 +13,9 @@
   --sm: 24px;
   --md: 36px;
   --lg: 48px;
+  --padding: 16px;
+  --header-height: 48px;
+  --footer-height: 60px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -53,20 +56,9 @@
   }
 }
 
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 h1,
