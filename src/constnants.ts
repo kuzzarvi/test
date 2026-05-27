@@ -1,0 +1,1 @@
+export const navsDefault = ['dashboard', 'calculator', 'magazine'];

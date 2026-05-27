@@ -1,9 +1,12 @@
-import {Layout, Loader} from "./shared/Components";
+import {Layout} from "./shared/Components";
+import Navigation from "./features/Navigation";
+import {navsDefault} from "./constnants.ts";
+import Pages from "./Pages/index";
 
 function App() {
 
   return (
-      <Layout headerContent={<div>Header</div>} mainContent={<Loader />} footerContent={<div>footer</div>}/>
+      <Layout headerContent={<Navigation navs={navsDefault}/>} mainContent={<Pages />} footerContent={<div>footer</div>}/>
   )
 }
 

@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    gap: 8px;
+    padding: 10px 0;
+
+    :hover {
+        background-color: var(--bg);
+    }
+
+    .navigation {
+        display: flex;
+        height: 32px;
+        padding: 4px 8px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        white-space: nowrap;
+        transition: .28s ease-in-out;
+        color: var(--primary);
+        text-decoration: none;
+    }
+
+    .navigation_active {
+        background-color: var(--primary-bg);
+    }
+}
