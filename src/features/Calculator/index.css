@@ -1,18 +1,4 @@
 .tariff-calculator-container {
-    --color-bg: #0a0a0a;
-    --color-surface: #121212;
-    --color-surface-hover: #1a1a1a;
-    --color-primary: #e20074;
-    --color-primary-alpha: rgba(226, 0, 116, 0.1);
-    --color-text: #ffffff;
-    --color-text-muted: #888888;
-    --color-text-dark: #000000;
-    --color-border: #222222;
-
-    --radius-lg: 16px;
-    --radius-md: 12px;
-    --transition-fast: 0.2s ease;
-
     max-width: 640px;
     min-width: 360px;
     margin: 0 auto;

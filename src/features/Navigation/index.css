@@ -4,7 +4,7 @@ nav {
     padding: 10px 0;
 
     :hover {
-        background-color: var(--bg);
+        background-color: var(--color-primary-bg);
     }
 
     .navigation {
@@ -16,11 +16,12 @@ nav {
         border-radius: 12px;
         white-space: nowrap;
         transition: .28s ease-in-out;
-        color: var(--primary);
+        color: var(--color-primary);
         text-decoration: none;
     }
 
     .navigation_active {
-        background-color: var(--primary-bg);
+        background-color: var(--color-bg);
+        transform: translateY(1px);
     }
 }
