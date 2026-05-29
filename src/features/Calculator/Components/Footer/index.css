@@ -1,0 +1,50 @@
+.total-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 24px;
+}
+
+.total-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    font-family: monospace;
+}
+
+.total-price {
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 4px;
+}
+
+.total-period {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-text-muted);
+}
+
+.submit-button {
+    background-color: var(--color-text);
+    color: var(--color-text-dark);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.submit-button:active {
+    transform: scale(0.97);
+}

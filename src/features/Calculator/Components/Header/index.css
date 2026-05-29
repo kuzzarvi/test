@@ -1,0 +1,17 @@
+.calculator-header {
+    margin-bottom: 32px;
+}
+
+.calculator-badge {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.calculator-title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 900;
+    margin: 4px 0 0 0;
+}

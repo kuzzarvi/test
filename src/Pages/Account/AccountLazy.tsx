@@ -3,12 +3,12 @@ import {Loader} from "../../shared/Components";
 
 const Calculator = React.lazy(() => import("./index.tsx"));
 
-const CalculatorLazy: FC = () => {
+const AccountLazy: FC = () => {
    return <Suspense fallback={<Loader size='lg'/>}>
         <Calculator />
     </Suspense>
 };
 
-CalculatorLazy.displayName = 'CalculatorLazy'
+AccountLazy.displayName = 'AccountLazy'
 
-export default CalculatorLazy;
+export default AccountLazy;
