@@ -1,0 +1,1 @@
+export type DelayType = (ms: number) => Promise<void>;

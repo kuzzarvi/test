@@ -1,7 +1,8 @@
 export type SocialsProps = {
-    services: {
-        name: string;
-        isActive: boolean;
-    }[];
+    isActive: {
+        [k: string]: boolean;
+    };
     onChange: (name: string) => void;
 }
+
+export type ServiceType = string;

@@ -63,7 +63,7 @@ export const TariffCalculator: React.FC = () => {
                 <Slider step={GB_STEP} min={5} max={100} value={tariff.gigabytes} onChange={(v) =>handleSliderChange('gigabytes', v)} unit={'ГБ'} label={'Мобильный интернет'} />
             </div>
 
-            <Services onChange={handleSocialToggle} services={(Object.keys(tariff.socials) as Array<keyof TariffConfig['socials']>).map((name)=> ({name, isActive: tariff.socials[name]}))} />
+            <Services onChange={handleSocialToggle} isActive={tariff.socials} />
 
             <hr className="divider" />
 
