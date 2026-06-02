@@ -4,7 +4,7 @@ import {Slider} from "../../shared/Components";
 import {Footer, Header} from "./Components";
 import {Services} from "./Components/Services";
 
-export interface TariffConfig {
+export interface TariffConfig { // TODO  пересобрать типы
     minutes: number;
     gigabytes: number;
     socials: {
@@ -14,7 +14,7 @@ export interface TariffConfig {
     };
 }
 
-const MIN_STEP = 50;
+const MIN_STEP = 50; // TODO перенести константы на бек
 const GB_STEP = 5;
 const BASE_PRICE = 250;
 const PRICE_PER_MINUTE = 1.3;
@@ -22,7 +22,7 @@ const PRICE_PER_GB = 5;
 const SOCIAL_PRICE = 50;
 
 export const TariffCalculator: React.FC = () => {
-    const [tariff, setTariff] = useState<TariffConfig>({
+    const [tariff, setTariff] = useState<TariffConfig>({ // TODO разделить стейт, стейт не должен зависеть от реализации
         minutes: 300,
         gigabytes: 20,
         socials: {
@@ -32,7 +32,7 @@ export const TariffCalculator: React.FC = () => {
         },
     });
 
-    const handleSliderChange = (field: 'minutes' | 'gigabytes', value: number) => {
+    const handleSliderChange = (field: 'minutes' | 'gigabytes', value: number) => {  // TODO логику переделать
         setTariff((prev) => ({ ...prev, [field]: value }));
     };
 
