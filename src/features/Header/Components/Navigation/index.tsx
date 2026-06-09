@@ -4,7 +4,7 @@ import {NavigationProps} from "./types.ts";
 
 import './index.css';
 
-const Navigation: FC<NavigationProps> = ({navs} ) => {
+export const Navigation: FC<NavigationProps> = ({navs} ) => {
     return <nav>
         {navs.map((el) =>
             <NavLink key={el} to={`/${el}`} className={({ isActive }) =>
@@ -16,6 +16,4 @@ const Navigation: FC<NavigationProps> = ({navs} ) => {
     </nav>
 };
 
-Navigation.displayName = "Navigation"
-
-export default Navigation;
+Navigation.displayName = "Navigation";

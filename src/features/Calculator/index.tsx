@@ -8,9 +8,7 @@ export interface TariffConfig { // TODO  пересобрать типы
     minutes: number;
     gigabytes: number;
     socials: {
-        telegram: boolean;
-        youtube: boolean;
-        tiktok: boolean;
+        [key: string]: boolean;
     };
 }
 
@@ -36,7 +34,7 @@ export const TariffCalculator: React.FC = () => {
         setTariff((prev) => ({ ...prev, [field]: value }));
     };
 
-    const handleSocialToggle = (platform: keyof TariffConfig['socials']) => {
+    const handleSocialToggle = (platform: string) => {
         setTariff((prev) => ({
             ...prev,
             socials: {
