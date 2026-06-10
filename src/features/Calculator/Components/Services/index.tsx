@@ -1,11 +1,11 @@
-import {FC} from "react";
+import {FC, memo} from "react";
 import {SocialsProps} from "./types.ts";
 
 import './index.css';
 import {useServices} from "./hooks";
 import {Loader} from "../../../../shared/Components";
 
-export const Services: FC<SocialsProps> = ({onChange, isActive}) => {
+export const Services: FC<SocialsProps> = memo(({onChange, isActive}) => {
     const {data, isFetching} = useServices();
 
     if (isFetching) {
@@ -30,6 +30,6 @@ export const Services: FC<SocialsProps> = ({onChange, isActive}) => {
             })}
         </div>
     </div>
-}
+});
 
 Services.displayName = "Services";

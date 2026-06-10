@@ -1,1 +1,1 @@
-export const navsDefault = ['dashboard', 'account', 'magazine'];
+export const navsDefault = ['account', 'dashboard', 'magazine'];

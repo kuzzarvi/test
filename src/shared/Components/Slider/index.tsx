@@ -11,6 +11,7 @@ export const Slider: FC<SliderProps> = ({
                                             max,
                                             step,
     onChange
+    
                            }) => {
     return <div className="slider-block">
         <div className="slider-info">

@@ -1,6 +1,6 @@
 import {useCallback, useEffect, useState} from "react";
 import {UseServicesType} from "./types.ts";
-import {fetchServices} from "../../actions";
+import {fetchTariffConfig} from "../../actions";
 
 export const useServices: UseServicesType = () => {
     const [data, setData] = useState<ReturnType<UseServicesType>['data']>([]);
@@ -10,7 +10,7 @@ export const useServices: UseServicesType = () => {
         setIsFetching(true);
 
         try {
-            const res =  await fetchServices();
+            const res =  await fetchTariffConfig();
             setData(res);
         } catch (e) {
             setData([]);
