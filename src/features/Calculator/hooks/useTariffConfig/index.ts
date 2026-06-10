@@ -1,19 +1,19 @@
 import {useCallback, useEffect, useState} from "react";
-import {UseServicesType} from "./types.ts";
+import {UseTariffConfigType} from "./types.ts";
 import {fetchTariffConfig} from "../../actions";
 
-export const useServices: UseServicesType = () => {
-    const [data, setData] = useState<ReturnType<UseServicesType>['data']>([]);
-    const [isFetching, setIsFetching] = useState(false);
+export const useTariffConfig: UseTariffConfigType = () => {
+    const [data, setData] = useState<ReturnType<UseTariffConfigType>['data']>(null);
+    const [isFetching, setIsFetching] = useState<ReturnType<UseTariffConfigType>['isFetching']>(false);
 
-    const getServices = useCallback(async () => {
+    const getTariffConfig = useCallback(async () => {
         setIsFetching(true);
 
         try {
             const res =  await fetchTariffConfig();
             setData(res);
         } catch (e) {
-            setData([]);
+            setData(null);
             console.warn(`Failed to fetch services: make message for error `);
             // TODO Добавить тостер об ошибке если это не аборт запроса
         }
@@ -23,7 +23,7 @@ export const useServices: UseServicesType = () => {
     }, []);
 
     useEffect(() => {
-        getServices();
+        getTariffConfig();
 
         return () => {
             // TODO добавить аборт запроса

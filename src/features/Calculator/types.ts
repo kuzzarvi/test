@@ -4,7 +4,7 @@ export type TariffType = {
     services: string[];
 }
 
-export type TariffConfigType = {
+export type TariffConfigType = null | {
     stepMinutes: number;
     stepGigabytes: number;
     priceBase: number;

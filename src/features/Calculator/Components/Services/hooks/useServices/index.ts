@@ -4,7 +4,7 @@ import {fetchServices} from "../../actions";
 
 export const useServices: UseServicesType = () => {
     const [data, setData] = useState<ReturnType<UseServicesType>['data']>([]);
-    const [isFetching, setIsFetching] = useState(false);
+    const [isFetching, setIsFetching] = useState<ReturnType<UseServicesType>['isFetching']>(false);
 
     const getServices = useCallback(async () => {
         setIsFetching(true);
