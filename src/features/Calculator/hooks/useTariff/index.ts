@@ -11,7 +11,7 @@ export const useTariff: UseTariffType = (minutesMin = 0, gigabytesMin = 0) => {
   const handleSetServices = useCallback((service: string) => {
     setServices((prevState) => ({
       ...prevState,
-      [service]: !prevState.service,
+      [service]: !prevState[service],
     }));
   }, []);
 
