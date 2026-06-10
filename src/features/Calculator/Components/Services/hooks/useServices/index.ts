@@ -28,7 +28,7 @@ export const useServices: UseServicesType = () => {
     return () => {
       // TODO добавить аборт запроса
     };
-  }, []);
+  }, [getServices]);
 
   return { data, isFetching };
 };

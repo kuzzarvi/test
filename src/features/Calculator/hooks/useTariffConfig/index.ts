@@ -29,7 +29,7 @@ export const useTariffConfig: UseTariffConfigType = () => {
     return () => {
       // TODO добавить аборт запроса
     };
-  }, []);
+  }, [getTariffConfig]);
 
   return { data, isFetching };
 };

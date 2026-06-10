@@ -21,7 +21,7 @@ export const useTariff: UseTariffType = (minutesMin = 0, gigabytesMin = 0) => {
 
   useEffect(() => {
     setGigabytes(gigabytesMin);
-  }, [minutesMin]);
+  }, [gigabytesMin]);
 
   return {
     minutes,
