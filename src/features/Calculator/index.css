@@ -1,6 +1,5 @@
 .tariff-calculator-container {
-    max-width: 640px;
-    min-width: 360px;
+    width: 440px;
     margin: 0 auto;
     background-color: var(--color-bg);
     color: var(--color-text);

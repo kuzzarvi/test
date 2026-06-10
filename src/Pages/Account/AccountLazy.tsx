@@ -1,11 +1,11 @@
 import React, {FC, Suspense} from "react";
 import {Loader} from "../../shared/Components";
 
-const Calculator = React.lazy(() => import("./index.tsx"));
+const Account = React.lazy(() => import("./index.tsx"));
 
 const AccountLazy: FC = () => {
    return <Suspense fallback={<Loader size='lg'/>}>
-        <Calculator />
+        <Account />
     </Suspense>
 };
 

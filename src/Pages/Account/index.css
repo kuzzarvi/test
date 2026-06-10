@@ -1,0 +1,10 @@
+.account {
+    display: flex;
+    gap: 16px;
+}
+
+@media (width < 1024px) {
+    .account {
+        flex-direction: column;
+    }
+}

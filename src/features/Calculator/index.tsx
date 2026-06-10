@@ -1,8 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, {useState, useMemo, memo} from 'react';
 import './index.css';
 import {Slider} from "../../shared/Components";
-import {Footer, Header} from "./Components";
-import {Services} from "./Components/Services";
+import {Footer, Header, Services} from "./Components";
 
 export interface TariffConfig { // TODO  пересобрать типы
     minutes: number;
@@ -19,7 +18,7 @@ const PRICE_PER_MINUTE = 1.3;
 const PRICE_PER_GB = 5;
 const SOCIAL_PRICE = 50;
 
-export const TariffCalculator: React.FC = () => {
+export const Calculator: React.FC = memo(() => {
     const [tariff, setTariff] = useState<TariffConfig>({ // TODO разделить стейт, стейт не должен зависеть от реализации
         minutes: 300,
         gigabytes: 20,
@@ -68,4 +67,6 @@ export const TariffCalculator: React.FC = () => {
             <Footer totalPrice={totalPrice} />
         </div>
     );
-};
+});
+
+Calculator.displayName = "Calculator";

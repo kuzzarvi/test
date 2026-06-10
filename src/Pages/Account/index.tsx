@@ -1,7 +1,11 @@
 import {FC} from "react";
-import {TariffCalculator} from "../../features/Calculator";
+import {Calculator} from "../../features/Calculator";
+import './index.css';
 
-const Account: FC = () => (<TariffCalculator />);
+const Account: FC = () => (<div className="account">
+    <Calculator />
+    <Calculator />
+</div>);
 
 Account.displayName = "Account";
 
