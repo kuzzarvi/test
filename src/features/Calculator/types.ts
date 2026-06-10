@@ -5,8 +5,12 @@ export type TariffType = {
 }
 
 export type TariffConfigType = null | {
-    stepMinutes: number;
-    stepGigabytes: number;
+    minutesStep: number;
+    minutesMin: number;
+    minutesMax: number;
+    gigabytesStep: number;
+    gigabytesMin: number;
+    gigabytesMax: number;
     priceBase: number;
     priceMinutes: number;
     priceGigabytes: number;

@@ -12,6 +12,10 @@ export const Services: FC<SocialsProps> = memo(({onChange, isActive}) => {
         return <Loader size='sm' /> // TODO заменить на скелетон
     }
 
+    if (!data.length) {
+        return null;
+    }
+
    return <div className="socials-section">
         <h3 className="socials-title">Безлимитные сервисы (+50 ₽/мес)</h3>
         <div className="socials-grid">

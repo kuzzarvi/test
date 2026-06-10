@@ -7,4 +7,8 @@ export const mockResponse: FetchTariffConfigEndpointType = {
     PRICE_PER_MINUTE : 1.3,
     PRICE_PER_GB : 5,
     SOCIAL_PRICE : 50,
+    MIN_MIN: 100,
+    MIN_MAX: 1000,
+    GB_MIN: 5,
+    GB_MAX: 100
 };
