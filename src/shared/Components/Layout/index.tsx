@@ -1,20 +1,20 @@
-import {FC} from "react";
-import {LayoutProps} from "./types";
+import type { FC } from "react";
+import type { LayoutProps } from "./types";
 
-import './index.css';
+import "./index.css";
 
-export const Layout: FC<LayoutProps> = ({ headerContent, mainContent, footerContent }) => {
-    return <div className='layout'>
-        <header>
-            {headerContent}
-        </header>
-        <main>
-            {mainContent}
-        </main>
-        <footer>
-            {footerContent}
-        </footer>
+export const Layout: FC<LayoutProps> = ({
+  headerContent,
+  mainContent,
+  footerContent,
+}) => {
+  return (
+    <div className="layout">
+      <header>{headerContent}</header>
+      <main>{mainContent}</main>
+      <footer>{footerContent}</footer>
     </div>
+  );
 };
 
 Layout.displayName = "Layout";

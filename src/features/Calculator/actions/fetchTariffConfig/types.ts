@@ -1,18 +1,20 @@
-import {TariffConfigType} from "../../types.ts";
+import type { TariffConfigType } from "../../types.ts";
 
 export type FetchTariffConfigType = () => Promise<TariffConfigType>;
 
 export type FetchTariffConfigEndpointType = {
-    MIN_STEP: number;
-    GB_STEP: number;
-    BASE_PRICE: number;
-    PRICE_PER_MINUTE: number;
-    PRICE_PER_GB: number;
-    SOCIAL_PRICE: number;
-    MIN_MIN: number;
-    MIN_MAX: number;
-    GB_MIN: number;
-    GB_MAX: number;
-}
+  MIN_STEP: number;
+  GB_STEP: number;
+  BASE_PRICE: number;
+  PRICE_PER_MINUTE: number;
+  PRICE_PER_GB: number;
+  SOCIAL_PRICE: number;
+  MIN_MIN: number;
+  MIN_MAX: number;
+  GB_MIN: number;
+  GB_MAX: number;
+};
 
-export type NormalizeType = (props: FetchTariffConfigEndpointType) => TariffConfigType;
+export type NormalizeType = (
+  props: FetchTariffConfigEndpointType,
+) => TariffConfigType;

@@ -1,5 +1,5 @@
-import type {Size} from "../../Theme/types";
+import type { Size } from "../../Theme/types";
 
 export type LoaderProps = {
-    size?: Size;
-}
+  size?: Size;
+};

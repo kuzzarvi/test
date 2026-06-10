@@ -1,2 +1,2 @@
-export * from './useTariffConfig';
-export * from './useTariff';
+export * from "./useTariff";
+export * from "./useTariffConfig";

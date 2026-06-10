@@ -1,7 +1,7 @@
-import {FC} from "react";
+import type { FC } from "react";
 
-const Magazine: FC = () => (<div>Magazine</div>);
+const Magazine: FC = () => <div>Magazine</div>;
 
-Magazine.displayName = 'Magazine';
+Magazine.displayName = "Magazine";
 
 export default Magazine;

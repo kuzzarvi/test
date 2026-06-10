@@ -1,1 +1,1 @@
-export const loader = 'loader';
+export const loader = "loader";

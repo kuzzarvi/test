@@ -1,9 +1,7 @@
-import {FC} from "react";
+import type { FC } from "react";
 
 export const Actions: FC = () => {
-
-    return <div>
-    </div>;
+  return <div></div>;
 };
 
-Actions.displayName = 'Actions';
+Actions.displayName = "Actions";

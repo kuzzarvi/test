@@ -1,1 +1,1 @@
-export * from './fetchTariffConfig';
+export * from "./fetchTariffConfig";

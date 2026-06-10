@@ -1,10 +1,11 @@
-import {FC} from "react";
-import {Navigation} from "./Components";
-import {navsDefault} from "../../constnants.ts";
+import type { FC } from "react";
+import { navsDefault } from "../../constnants.ts";
+import { Navigation } from "./Components";
 
 export const Header: FC = () => {
-
-    return <div>
-        <Navigation navs={navsDefault} />
+  return (
+    <div>
+      <Navigation navs={navsDefault} />
     </div>
+  );
 };

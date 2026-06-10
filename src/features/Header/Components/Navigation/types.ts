@@ -1,3 +1,3 @@
 export type NavigationProps = {
-    navs: string[];
-}
+  navs: string[];
+};

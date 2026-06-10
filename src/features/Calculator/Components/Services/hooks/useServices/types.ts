@@ -1,3 +1,6 @@
-import {ServiceType} from "../../types.ts";
+import type { ServiceType } from "../../types.ts";
 
-export type UseServicesType = () => { data: ServiceType[], isFetching: boolean };
+export type UseServicesType = () => {
+  data: ServiceType[];
+  isFetching: boolean;
+};

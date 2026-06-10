@@ -1,3 +1,3 @@
-export {Header} from './Header';
-export {Footer} from './Footer';
-export {Services} from './Services';
+export { Footer } from "./Footer";
+export { Header } from "./Header";
+export { Services } from "./Services";

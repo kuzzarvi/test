@@ -1,1 +1,1 @@
-export const THEME_MAP = ['light', 'dark'] as const
+export const THEME_MAP = ["light", "dark"] as const;

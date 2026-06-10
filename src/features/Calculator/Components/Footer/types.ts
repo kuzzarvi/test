@@ -1,3 +1,3 @@
 export type FooterProps = {
-    totalPrice: number;
-}
+  totalPrice: number;
+};
